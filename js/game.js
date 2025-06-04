@@ -5848,6 +5848,7 @@ else {
   <div class="description-text">
   <div id="title">Wormate Friends</div>
   <div class="description-text-hiep">
+  <button id=\"sort-toggle\" style=\"font-size: 10px; padding: 1px 6px; background-color: #333; color: #ddd; border: 1px solid #666; border-radius: 3px; cursor: pointer; outline: none;\">Timmap Servers</button>
   <ul style="margin-top: 5px;" class="ui-tabs-nav">
     <li class="ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active" style="margin: -5px">
       <a> <span class="flag br" value="https://i.imgur.com/dixYLjk.png"></span> </a>
@@ -5898,6 +5899,24 @@ else {
             
              
                     `);
+             function _0x46fa94() {
+        $("body").append("<div id=\"custom-tooltip\" style=\"display: none; position: absolute; z-index: 9999; background: rgba(0,0,0,0.9); padding: 5px 10px; border-radius: 4px; font-size: 10px; pointer-events: none; text-align: center;\"><div style=\"display: flex; justify-content: space-between; align-items: center;\"><span style=\"color: #ffd700; text-align: right;\">TimMap Servers </span><span style=\"color: white; margin: 0 5px;\">âŸ· </span><span style=\"color: #ffd700; text-align: left;\">WormWorld Servers</span></div></div>");
+        $("body").append("<div id=\"image-tooltip\" class=\"image-tooltip\"></div>");
+        window.currentDisplayMode = "timmap";
+        $("#sort-toggle").removeClass("wormworld").text("Timmap Servers");
+        function _0x5ed011() {
+          const _0xe46aa1 = {
+            mx: "servers-mexico",
+            br: "servers-peru",
+            us: "servers-eeuu",
+            ca: "servers-canada",
+            de: "servers-germania",
+            fr: "servers-francia",
+            sg: "servers-singapur",
+            jp: "servers-japon",
+            au: "servers-australia",
+            gb: "servers-granbretana"
+          };
 
 
 
