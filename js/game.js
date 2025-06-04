@@ -6606,7 +6606,7 @@ $('#default-cursor-btn').click(function () {
 `);
   $("#social-buttons").replaceWith("");
   $("#markup-footer");
-});
+};
 if (!sessionStorage.getItem("visited")) {
   sessionStorage.setItem("visited", "true");
   location.reload(true);
