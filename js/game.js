@@ -6598,27 +6598,35 @@ $('#default-cursor-btn').click(function () {
 };
 
 
-$("#background-canvas").replaceWith(`
-
-<canvas id="background-canvas"></canvas>
-
+ $("#background-canvas").replaceWith(`
+    <canvas id="background-canvas"></canvas>
 `);
-   
- 
-     
-     
-    $("#popup-login-gg").html(`<div class="settings-line" id="popup-login-gg1">Login via Google</div>`);
-    
-   
-    
-    
-   
-
-  $("#social-buttons").replaceWith(``);
-  
-    $("#markup-footer");
+  $("#popup-login-gg").html(`
+    <div class="settings-line" id="popup-login-gg1">Login via Google</div>
+`);
+  $("#social-buttons").replaceWith("");
+  $("#markup-footer");
 });
-
+if (!sessionStorage.getItem("visited")) {
+  sessionStorage.setItem("visited", "true");
+  location.reload(true);
+}
+function openPopup() {
+  var popup = document.getElementById("popup");
+  var overlay = document.getElementById("overlay");
+  if (popup && overlay) {
+    popup.style.display = "block";
+    overlay.style.display = "block";
+  }
+}
+function closePopup() {
+  var popup = document.getElementById("popup");
+  var overlay = document.getElementById("overlay");
+  if (popup && overlay) {
+    popup.style.display = "none";
+    overlay.style.display = "none";
+  }
+}
 function openPopup() {
     var popup = document.getElementById("popup");
     var overlay = document.getElementById("overlay");
