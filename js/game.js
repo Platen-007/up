@@ -1,5 +1,5 @@
 
-var SITE_XTHOST = "https://platen-007.github.io/007";
+var xURL = "https://platen-007.github.io/007";
 window.detectLog = null;
 const _wrmxt = {
     BETAisSkinCustom(input) {
@@ -195,7 +195,7 @@ const ctx = {
             fontSize: 12,
             lineJoin: "round",
             stroke: "#EFFA45",
-            fontFamily: "vuonghiep",
+            fontFamily: "worm007",
             fontWeight: "bold"
 
         }),
@@ -218,7 +218,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "vuonghiep",
+            fontFamily: "worm007",
             fontWeight: "bold",
             wordWrap: true
         }),
@@ -230,7 +230,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "vuonghiep",
+            fontFamily: "worm007",
             fontWeight: "bold",
             wordWrap: true
         }),
@@ -242,7 +242,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "vuonghiep",
+            fontFamily: "worm007",
             fontWeight: "bold",
             wordWrap: true
         }),
@@ -254,7 +254,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "vuonghiep",
+            fontFamily: "worm007",
             fontWeight: "bold",
             wordWrap: true
         }),
@@ -268,7 +268,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "vuonghiep",
+            fontFamily: "worm007",
             fontWeight: "bold",
             wordWrap: true
         }),
@@ -282,7 +282,7 @@ const ctx = {
             strokeThickness: 1,
             whiteSpace: "normal",
             fontWeight: "bold",
-            fontFamily: "vuonghiep",
+            fontFamily: "worm007",
             wordWrap: true
         }),
     }
@@ -292,6 +292,55 @@ ctx.clock.width = 100;
 ctx.clock.height = 100;
 ctx.clock.x = -50;
 ctx.clock.y = -50;
+
+
+// Yeni TOPHS BaÅŸlÄ±ÄŸÄ±nÄ± Ekle
+ctx.value_tophs = new PIXI.Text("Top HS", ctx.fontStyle.name);
+ctx.value_tophs.x = 20;
+ctx.value_tophs.y = 150;
+ctx.value_tophs.style.fontSize = 10; // KÃ¼Ã§Ã¼k font boyutu
+ctx.value_tophs.style.fill = "#FFFFFF"; // Beyaz renk
+
+//----------------------------------------------------------
+// Yeni 1. Oyuncu BaÅŸlÄ±ÄŸÄ±nÄ± Ekle
+ctx.value_top1 = new PIXI.Text("1. ---", ctx.fontStyle.name);
+ctx.value_top1.x = 12;
+ctx.value_top1.y = 170;
+ctx.value_top1.style.fontSize = 8; // KÃ¼Ã§Ã¼k font boyutu
+ctx.value_top1.style.fill = "#FFFFFF"; // Beyaz renk
+
+//----------------------------------------------------------
+// Yeni 2. Oyuncu BaÅŸlÄ±ÄŸÄ±nÄ± Ekle
+ctx.value_top2 = new PIXI.Text("2. ---", ctx.fontStyle.name);
+ctx.value_top2.x = 12;
+ctx.value_top2.y = 185;
+ctx.value_top2.style.fontSize = 8; // KÃ¼Ã§Ã¼k font boyutu
+ctx.value_top2.style.fill = "#FFFFFF"; // Beyaz renk
+
+//----------------------------------------------------------
+// Yeni 3. Oyuncu BaÅŸlÄ±ÄŸÄ±nÄ± Ekle
+ctx.value_top3 = new PIXI.Text("3. ---", ctx.fontStyle.name);
+ctx.value_top3.x = 12;
+ctx.value_top3.y = 200;
+ctx.value_top3.style.fontSize = 8; // KÃ¼Ã§Ã¼k font boyutu
+ctx.value_top3.style.fill = "#FFFFFF"; // Beyaz renk
+
+//----------------------------------------------------------
+// Yeni 4. Oyuncu BaÅŸlÄ±ÄŸÄ±nÄ± Ekle
+ctx.value_top4 = new PIXI.Text("4. ---", ctx.fontStyle.name);
+ctx.value_top4.x = 12;
+ctx.value_top4.y = 215;
+ctx.value_top4.style.fontSize = 8; // KÃ¼Ã§Ã¼k font boyutu
+ctx.value_top4.style.fill = "#FFFFFF"; // Beyaz renk
+
+//----------------------------------------------------------
+// Yeni 5. Oyuncu BaÅŸlÄ±ÄŸÄ±nÄ± Ekle
+ctx.value_top5 = new PIXI.Text("5. ---", ctx.fontStyle.name);
+ctx.value_top5.x = 12;
+ctx.value_top5.y = 230;
+ctx.value_top5.style.fontSize = 8; // KÃ¼Ã§Ã¼k font boyutu
+ctx.value_top5.style.fill = "#FFFFFF"; // Beyaz renk
+
 
 
 
@@ -2246,7 +2295,7 @@ else {
                         circle.drawCircle(0, 0, this.Kf);
                         circle.endFill();
                         //circle.lineStyle(2, 0x00ff21);
-                        circle.lineStyle(2, 0xffffff);
+                        circle.lineStyle(1, 0xFF0000);
                         circle.drawCircle(0, 0, this.Kf);
                         circle.moveTo(0, -this.Kf);
                         circle.lineTo(0, +this.Kf);
@@ -2256,7 +2305,7 @@ else {
                         this.Sf.alpha = .55;
                         this.Jf.zIndex = 2;
                         this.Jf.alpha = .9;
-                        this.Jf.beginFill(0xff0000);
+                        this.Jf.beginFill(0xFFFFFF);
                         this.Jf.drawCircle(0, 0, .12 * this.Kf);
                         this.Jf.endFill();
                         this.Jf.lineStyle(1, "black");
@@ -4985,7 +5034,7 @@ else {
                         let get = i18nCustomBundle(this.nl.name)
                         if (this.nl.img) {
                             var where = '<img src="';
-                            where = where + SITE_XTHOST + "/images/group/" + this.nl.img;
+                            where = where + xURL + "/images/group/" + this.nl.img;
                             get = where = where + '" height="43" width="220" />';
                         }
                         return get;
@@ -5608,7 +5657,7 @@ else {
         var showServers = function () {
 
 
-            $("#mm-event-text").replaceWith("<div class=\"text-vnxx\">New Extension New Update</div>");
+            $("#mm-event-text");
 
           $(".column-right").append(`
           
@@ -5701,16 +5750,7 @@ else {
             </td>
         </tr>
     </tbody>
-</table>
 
-<div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Keys <a href="/">Q</a> : Automatically turns around in one place. (Quay Đầu Vòng Tròn 1 Chỗ)</div>
-                    <div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Keys <a href="/">R </a> : Quick Revive (Hồi Sinh Nhanh)</div>
-                    
-                    <div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Note : This setting is only for activated members . Thank you !</div>
-                    <div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Lưu Ý : Phần cài đặt này chỉ dành cho thành viên đã kích hoạt . Xin cảm ơn !</div>
-                    <center><div class="hg"><a target="_blank" href="https://thanhtoan.vuonghiep.com/">Activated (Kích Hoạt)</a></div></center>
-
-           
         </div>`);
 
            $("#loa831pibur0w4gv").replaceWith(`
@@ -5724,7 +5764,7 @@ else {
       <input type="text" value="${theoKzObjects.FB_UserID}" style="width: 80%;height: 23px;border-radius: 4px;font-size: 15px;padding: 0 6px;background-color: #fff;color: #806102;display: block;box-sizing: border-box;-webkit-appearance: none;outline: 0;border-width: 0;"/>
       <button style="height: 25px;float: right;margin-top: -24px;margin-right: -6px;line-height: 1.2;font-size: 14px;" onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('You ID ${theoKzObjects.FB_UserID} copiado! copied!'));">Copy</button>
       <center>
-        <div class="hg"><a target="_blank" href="https://thanhtoan.vuonghiep.com/">Activated (Kích Hoạt)</a> </div>
+        <div class="hg"><a target="_blank" href="###">Activated (Kích Hoạt)</a> </div>
       </center>
      <i class="fa fa-book" aria-hidden="true" style="color:48ff00;"></i> Instructions for installing on IOS and iPad New 2024: <a style="color: #2ae1eb; font-weight: 600;" href="https://www.youtube.com/watch?v=uyHHXWKHgRw">https://www.youtube.com/watch?v=uyHHXWKHgRw</a> </div>
       
@@ -5780,20 +5820,9 @@ else {
     
     
     <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
-    
-    <input type="button" value="CONTACT" onclick="window.location.href='https://api.whatsapp.com/send?phone=84924623650&text=Xin%20ch%C3%A0o!%20M%C3%ACnh%20%C4%91ang%20d%C3%B9ng%20Whatsapp'" class="fullscreen_contact">
     </div> `);
             
             
-             $(".mm-merchant-cont").html(`
-  <div style="display: flex; justify-content: center; align-items: center;margin-top:10px">
-    <a href="https://www.youtube.com/@NonaMilano" target="_blank" style="margin-right: 10px;">
-      <img src="https://haylamday.com/images/hiep_img/nona.png" alt="nona" width="155">
-    </a>
-    <a href="https://thanhtoan.vuonghiep.com" target="_blank">
-      <img src="https://i.imgur.com/UptsCxV.png" alt="wfc" width="155">
-    </a>
-  </div>`);
             $(document).ready(function () {
                 $(".fullscreen_button").on("click", function () {
                     document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen()
@@ -6031,13 +6060,13 @@ else {
 
             $("#mm-coins-box").replaceWith(`<div style="margin: 0;" id="mm-coins-box">
                 
-                <button style='width: 140px;height: 45px;float: right;border-radius: 10px;border: solid #fac 2px;' id='getskin'>Unlock Skins</button>
+                <button style='width: 78px;height: 30px;float: right;border-radius: 10px;border: solid #fac 2px;' id='getskin'>Skins</button>
                 </div>
                 </div>`);
                 
 
 window.multiplier = 0.625;
-window.zoomLevel = 5;
+window.zoomLevel = 1;
 
 function zoomIn() {
   window.zoomLevel++;
@@ -6571,23 +6600,6 @@ $("#background-canvas").replaceWith(`
   $("#social-buttons").replaceWith(``);
   
     $('#markup-footer').replaceWith(`
-    
-   
-    
-            <footer id="markup-footer">
-            <div class="lang-menu"><button class="lang-button">Language ▴</button>
-            <div class="lang-list"><a hreflang="en" href="/">English</a>
-<a hreflang="uk" href="/uk/">Українська</a>
-<a hreflang="de" href="/de/">Deutsch</a>
-<a hreflang="fr" href="/fr/">Français</a>
-<a hreflang="es" href="/es/">Español</a>
-</div></div>
-            
-            <a class="link" hreflang="en" href="https://VuongHiep.Com">© 2024 Wormate Friends Connect</a>
-            
-            <a style="font-size: 17px;font-weight: 600;">VuongHiep.Com</a>
-          <a style="font-size: 17px;font-weight: 500;color: #ff0;"> Made with <i class='fa fa-heart animated infinite pulse' style='color:red'></i> in VungTau !</a>
-            </footer>
 
 
 
@@ -6920,4 +6932,4 @@ isValidHotkey = function (e) {
 
 
 
-console.log("Core 2022 THEO Update 2023");
+console.log("New Update DV-PLATEN");
