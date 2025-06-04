@@ -191,31 +191,31 @@ var StoreSkinID = $("#idReplaceSkin");
 const ctx = {
     fontStyle: {
         name: new PIXI.TextStyle({
-            fill: "#FF0000",
-            fontSize: 15,
+            fill: "#FFFF00",
+            fontSize: 12,
             lineJoin: "round",
-            stroke: "#00000000",
+            stroke: "#EFFA45",
             fontFamily: "worm007",
-            fontWeight: "nonw"
+            fontWeight: "bold"
 
         }),
         blanco: new PIXI.TextStyle({
             align: "center",
-            fill: "#FF0000",
-            fontSize: 15,
+            fill: "#FFF",
+            fontSize: 12,
             lineJoin: "round",
-            stroke: "#00000000",
+            stroke: "#FFF",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontWeight: "none",
+            fontWeight: "bold",
             wordWrap: true
         }),
         morado: new PIXI.TextStyle({
             align: "center",
-            fill: "#FFF",
-            fontSize: 13,
+            fill: "#FFFF00",
+            fontSize: 10,
             lineJoin: "round",
-            stroke: "#00000000",
+            stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
             fontFamily: "worm007",
@@ -225,19 +225,19 @@ const ctx = {
         morado1: new PIXI.TextStyle({
             align: "center",
             fill: "#FFF",
-            fontSize: 13,
+            fontSize: 10,
             lineJoin: "round",
-            stroke: "#00000000",
+            stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
             fontFamily: "worm007",
-            fontWeight: "none",
+            fontWeight: "bold",
             wordWrap: true
         }),
         amarillo: new PIXI.TextStyle({
             align: "center",
             fill: "#FFFF00",
-            fontSize: 15,
+            fontSize: 10,
             lineJoin: "round",
             stroke: "#FAA845",
             strokeThickness: 1,
@@ -248,14 +248,14 @@ const ctx = {
         }),
         amarillo1: new PIXI.TextStyle({
             align: "center",
-            fill: "#FF0000",
-            fontSize: 15,
+            fill: "#FFF",
+            fontSize: 10,
             lineJoin: "round",
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
             fontFamily: "worm007",
-            fontWeight: "none",
+            fontWeight: "bold",
             wordWrap: true
         }),
         
@@ -2037,7 +2037,7 @@ else {
                     return extend(POGL.fc, function (p1__3354_SHARP_, yColor, i, canCreateDiscussions, n, isSlidingUp, s) {
                         POGL.fc.call(this, p1__3354_SHARP_, {
                             fill: yColor,
-                            fontFamily: "vuonghiep",
+                            fontFamily: "worm007",
                             fontSize: 36
                         });
                         this.anchor.set(.5);
@@ -2495,7 +2495,7 @@ else {
                         var extendedObject = extend(POGL.Zb, function () {
                             POGL.Zb.call(this);
                             this.eg = new POGL.fc("", {
-                                fontFamily: "vuonghiep",
+                                fontFamily: "worm007",
                                 fontSize: 11,
                                 fill: "white",
                                 fontWeight: "bold"
@@ -2504,7 +2504,7 @@ else {
                             this.eg.position.x = -5;
                             this.addChild(this.eg);
                             this.fg = new POGL.fc("", {
-                                fontFamily: "vuonghiep",
+                                fontFamily: "worm007",
                                 fontSize: 11,
                                 fill: "white",
                                 fontWeight: "bold"
@@ -2514,7 +2514,7 @@ else {
                             this.fg.position.x = 4;
                             this.addChild(this.fg);
                             this.gg = new POGL.fc("", {
-                                fontFamily: "vuonghiep",
+                                fontFamily: "worm007",
                                 fontSize: 11,
                                 fill: "white",
                                 fontWeight: "bold"
