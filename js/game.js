@@ -191,31 +191,31 @@ var StoreSkinID = $("#idReplaceSkin");
 const ctx = {
     fontStyle: {
         name: new PIXI.TextStyle({
-            fill: "#FFFF00",
-            fontSize: 12,
+            fill: "#FF0000",
+            fontSize: 15,
             lineJoin: "round",
-            stroke: "#EFFA45",
+            stroke: "#00000000",
             fontFamily: "worm007",
-            fontWeight: "bold"
+            fontWeight: "nonw"
 
         }),
         blanco: new PIXI.TextStyle({
             align: "center",
-            fill: "#FFF",
-            fontSize: 12,
+            fill: "#FF0000",
+            fontSize: 15,
             lineJoin: "round",
-            stroke: "#FFF",
+            stroke: "#00000000",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontWeight: "bold",
+            fontWeight: "none",
             wordWrap: true
         }),
         morado: new PIXI.TextStyle({
             align: "center",
-            fill: "#FFFF00",
-            fontSize: 10,
+            fill: "#FFF",
+            fontSize: 13,
             lineJoin: "round",
-            stroke: "#FAA845",
+            stroke: "#00000000",
             strokeThickness: 1,
             whiteSpace: "normal",
             fontFamily: "worm007",
@@ -225,19 +225,19 @@ const ctx = {
         morado1: new PIXI.TextStyle({
             align: "center",
             fill: "#FFF",
-            fontSize: 10,
+            fontSize: 13,
             lineJoin: "round",
-            stroke: "#FAA845",
+            stroke: "#00000000",
             strokeThickness: 1,
             whiteSpace: "normal",
             fontFamily: "worm007",
-            fontWeight: "bold",
+            fontWeight: "none",
             wordWrap: true
         }),
         amarillo: new PIXI.TextStyle({
             align: "center",
             fill: "#FFFF00",
-            fontSize: 10,
+            fontSize: 15,
             lineJoin: "round",
             stroke: "#FAA845",
             strokeThickness: 1,
@@ -248,14 +248,14 @@ const ctx = {
         }),
         amarillo1: new PIXI.TextStyle({
             align: "center",
-            fill: "#FFF",
-            fontSize: 10,
+            fill: "#FF0000",
+            fontSize: 15,
             lineJoin: "round",
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
             fontFamily: "worm007",
-            fontWeight: "bold",
+            fontWeight: "none",
             wordWrap: true
         }),
         
@@ -356,7 +356,7 @@ ctx.value_server.y = -18;
 ctx.label_hs = new PIXI.Text("HS", ctx.fontStyle.amarillo);
 ctx.value1_hs = new PIXI.Text("0", ctx.fontStyle.amarillo);
 
-ctx.label_kill = new PIXI.Text("KL", ctx.fontStyle.morado);
+ctx.label_kill = new PIXI.Text("KILL", ctx.fontStyle.morado);
 ctx.value1_kill = new PIXI.Text("0", ctx.fontStyle.morado);
 
 
