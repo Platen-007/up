@@ -6599,13 +6599,7 @@ $("#background-canvas").replaceWith(`
 
   $("#social-buttons").replaceWith(``);
   
-    $('#markup-footer').replaceWith(`
-
-
-
-
-
-        `);
+    $("#markup-footer");
 });
 
 function openPopup() {
