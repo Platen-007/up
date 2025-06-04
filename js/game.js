@@ -5899,8 +5899,8 @@ else {
             
              
                     `);
-             function _0x46fa94() {
-        $("body").append("<div id=\"custom-tooltip\" style=\"display: none; position: absolute; z-index: 9999; background: rgba(0,0,0,0.9); padding: 5px 10px; border-radius: 4px; font-size: 10px; pointer-events: none; text-align: center;\"><div style=\"display: flex; justify-content: space-between; align-items: center;\"><span style=\"color: #ffd700; text-align: right;\">TimMap Servers </span><span style=\"color: white; margin: 0 5px;\">âŸ· </span><span style=\"color: #ffd700; text-align: left;\">WormWorld Servers</span></div></div>");
+
+                    $("body").append("<div id=\"custom-tooltip\" style=\"display: none; position: absolute; z-index: 9999; background: rgba(0,0,0,0.9); padding: 5px 10px; border-radius: 4px; font-size: 10px; pointer-events: none; text-align: center;\"><div style=\"display: flex; justify-content: space-between; align-items: center;\"><span style=\"color: #ffd700; text-align: right;\">TimMap Servers </span><span style=\"color: white; margin: 0 5px;\">âŸ· </span><span style=\"color: #ffd700; text-align: left;\">WormWorld Servers</span></div></div>");
         $("body").append("<div id=\"image-tooltip\" class=\"image-tooltip\"></div>");
         window.currentDisplayMode = "timmap";
         $("#sort-toggle").removeClass("wormworld").text("Timmap Servers");
@@ -5917,8 +5917,6 @@ else {
             au: "servers-australia",
             gb: "servers-granbretana"
           };
-
-
 
             $(".ui-tab").on("click", account);
             $(".flag").click(function () {
