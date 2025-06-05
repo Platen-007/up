@@ -6504,7 +6504,7 @@ $('#default-cursor-btn').click(function () {
             j_markupHeader = $("#markup-header"),
             j_markupFooter = $("#markup-footer");
         __resize(), $(window).resize(__resize)
-    },
+    };
 
 
    window.anApp.p.Bc = function () {
