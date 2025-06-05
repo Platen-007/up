@@ -6930,3 +6930,12 @@ isValidHotkey = function (e) {
         return false;
     }
 };
+
+
+
+
+
+
+
+
+                             
