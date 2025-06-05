@@ -5844,71 +5844,31 @@ else {
             $('.mm-merchant').replaceWith('');
 
 
-            $('.description-text').replaceWith(`
-  <div class="description-text">
-  <div id="title">Wormate Friends</div>
-  <div class="description-text-hiep">
-  <div class="iframe-container" style="margin-top: -3px;">
-    <div class="spancursor">
-        <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
-        Change Version Extension
-    </div>
-<div id="graphics-settings">
-    <button id="resetScript" class="reset-button">Cache Delete</button>
-</div>
-  <ul style="margin-top: 5px;" class="ui-tabs-nav">
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active" style="margin: -5px">
-      <a> <span class="flag br" value="https://i.imgur.com/dixYLjk.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive1" style="margin: -5px">
-      <a> <span class="flag mx" value="https://i.imgur.com/JMAvuFN.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive2" style="margin: -5px">
-      <a> <span class="flag us" value="https://i.imgur.com/Jb2FF0y.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive3" style="margin: -5px">
-      <a> <span class="flag ca" value="https://i.imgur.com/m1skEsB.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive4" style="margin: -5px">
-      <a> <span class="flag de" value="https://i.imgur.com/VgCH8iy.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive5" style="margin: -5px">
-      <a> <span class="flag fr" value="https://i.imgur.com/QuEjBr0.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive6" style="margin: -5px">
-      <a> <span class="flag sg" value="https://i.imgur.com/ErLcgXP.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive7" style="margin: -5px">
-      <a> <span class="flag jp" value="https://i.imgur.com/P2rYk1k.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive8" style="margin: -5px">
-      <a> <span class="flag au" value="https://i.imgur.com/12e0wp4.png"></span> </a>
-    </li>
-    <li class="ui-tabs-tab ui-tab ui-tab-inactive9" style="margin: -5px">
-      <a> <span class="flag gb" value="https://i.imgur.com/8pQY6RW.png"></span> </a>
-    </li>
-  </ul>
-  <div class="bao-list2">
-    <div class="gachngang"></div>
-    <div class="servers-container">
-      <div class="servers-peru"></div>
-      <div class="servers-mexico" style="display: none;"></div>
-      <div class="servers-eeuu" style="display: none;"></div>
-      <div class="servers-canada" style="display: none;"></div>
-      <div class="servers-germania" style="display: none;"></div>
-      <div class="servers-francia" style="display: none;"></div>
-      <div class="servers-singapur" style="display: none;"></div>
-      <div class="servers-japon" style="display: none;"></div>
-      <div class="servers-australia" style="display: none;"></div>
-      <div class="servers-granbretana" style="display: none;"></div>
-    </div>
-  </div></div>
-            
-             
-                    `);
-
-$("body").append("<div id=\"custom-tooltip\" style=\"display: none; position: absolute; z-index: 9999; background: rgba(0,0,0,0.9); padding: 5px 10px; border-radius: 4px; font-size: 10px; pointer-events: none; text-align: center;\"><div style=\"display: flex; justify-content: space-between; align-items: center;\"><span style=\"color: #ffd700; text-align: right;\">TimMap Servers </span><span style=\"color: white; margin: 0 5px;\">âŸ· </span><span style=\"color: #ffd700; text-align: left;\">WormWorld Servers</span></div></div>");$("body").append("<div id=\"image-tooltip\" class=\"image-tooltip\"></div>");window.currentDisplayMode="timmap";$("#sort-toggle").removeClass("wormworld").text("Timmap Servers");function _0x5ed011(){const _0xe46aa1={mx:"servers-mexico",br:"servers-peru",us:"servers-eeuu",ca:"servers-canada",de:"servers-germania",fr:"servers-francia",sg:"servers-singapur",jp:"servers-japon",au:"servers-australia",gb:"servers-granbretana"}
-
+            $(".description-text").append("\n<div class=\"title-wormate-server\">\n          S E R V E R S\n        </div>\n        \n        <div class=\"description-text-hiep\">\n \n    <div style=\"position:sticky; top:0; z-index:100; background:#242424;\">\n    <BR>\n    <ul style=\"margin-top:5px\" class=\"ui-tabs-nav\">\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin:-5px\">\n        <a><span class=\"flag br\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/br.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin:-5px\">\n        <a><span class=\"flag mx\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/mx.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin:-5px\">\n        <a><span class=\"flag us\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/us.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin:-5px\">\n        <a><span class=\"flag ca\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/ca.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin:-5px\">\n        <a><span class=\"flag de\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/de.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin:-5px\">\n        <a><span class=\"flag fr\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/fr.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin:-5px\">\n        <a><span class=\"flag sg\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/sg.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin:-5px\">\n        <a><span class=\"flag jp\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/jp.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin:-5px\">\n        <a><span class=\"flag au\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/au.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin:-5px\">\n        <a><span class=\"flag gb\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/gb.png\"></span></a>\n      </li>\n    </ul>\n      \n      <!-- Ø²Ø± Ø§Ù„ØªØ¨Ø¯ÙŠÙ„ Ø£Ø³ÙÙ„ Ø§Ù„Ø£Ø¹Ù„Ø§Ù… Ù…Ø¨Ø§Ø´Ø±Ø© -->\n      <div style=\"text-align: center; margin: 2px 0; padding: 2px;\">\n        <button id=\"sort-toggle\" style=\"font-size: 10px; padding: 1px 6px; background-color: #333; color: #ddd; border: 1px solid #666; border-radius: 3px; cursor: pointer; outline: none;\">Timmap Servers</button>\n      </div>\n      \n      <div class=\"gachngang\"></div>\n      <div class=\"server-header\">\n        <div class=\"header-name\">SERVER</div>\n        <div class=\"header-region\">REGION</div>\n        <div class=\"header-status\">STATUS</div>\n        <div class=\"header-score\">SCORE</div>\n      </div>\n      <div class=\"gachngang\"></div>\n    </div>\n    \n    <!-- Ø¥Ø¶Ø§ÙØ© ØµÙˆØ±Ø© Ø§Ù„Ø®Ù„ÙÙŠØ© Ù‡Ù†Ø§ Ù‚Ø¨Ù„ Ø­Ø§ÙˆÙŠØ© Ø§Ù„Ø³ÙŠØ±ÙØ±Ø§Øª -->\n    <div class=\"background-image-container\">\n      <img src=\"https://wormup.in/images/cors-proxy.php?img=Background/serverbg.jpg\" class=\"background-image\">\n    </div>\n    \n    <div class=\"servers-container\">\n      <div class=\"servers-peru\"></div>\n      <div class=\"servers-mexico\" style=\"display:none\"></div>\n      <div class=\"servers-eeuu\" style=\"display:none\"></div>\n      <div class=\"servers-canada\" style=\"display:none\"></div>\n      <div class=\"servers-germania\" style=\"display:none\"></div>\n      <div class=\"servers-francia\" style=\"display:none\"></div>\n      <div class=\"servers-singapur\" style=\"display:none\"></div>\n      <div class=\"servers-japon\" style=\"display:none\"></div>\n      <div class=\"servers-australia\" style=\"display:none\"></div>\n      <div class=\"servers-granbretana\" style=\"display:none\"></div>\n    </div>\n  </div>\n</div>\n  ");
+        _0x46fa94();
+      }
+      function _0x4f9533() {
+        $(".description-text").html("\n<div class=\"title-wormate-server\">\n          S E R V E R S\n        </div>\n        \n        <div class=\"description-text-hiep\">\n \n    <div style=\"position:sticky; top:0; z-index:100; background:#242424;\">\n    <BR>\n    <ul style=\"margin-top:5px\" class=\"ui-tabs-nav\">\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin:-5px\">\n        <a><span class=\"flag br\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/br.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin:-5px\">\n        <a><span class=\"flag mx\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/mx.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin:-5px\">\n        <a><span class=\"flag us\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/us.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin:-5px\">\n        <a><span class=\"flag ca\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/ca.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin:-5px\">\n        <a><span class=\"flag de\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/de.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin:-5px\">\n        <a><span class=\"flag fr\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/fr.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin:-5px\">\n        <a><span class=\"flag sg\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/sg.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin:-5px\">\n        <a><span class=\"flag jp\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/jp.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin:-5px\">\n        <a><span class=\"flag au\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/au.png\"></span></a>\n      </li>\n      <li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin:-5px\">\n        <a><span class=\"flag gb\" value=\"' + gameSettings.s_l + '/images/cors-proxy.php?img=flg/gb.png\"></span></a>\n      </li>\n    </ul>\n      \n      <!-- Ø²Ø± Ø§Ù„ØªØ¨Ø¯ÙŠÙ„ Ø£Ø³ÙÙ„ Ø§Ù„Ø£Ø¹Ù„Ø§Ù… Ù…Ø¨Ø§Ø´Ø±Ø© -->\n      <div style=\"text-align: center; margin: 2px 0; padding: 2px;\">\n        <button id=\"sort-toggle\" style=\"font-size: 10px; padding: 1px 6px; background-color: #333; color: #ddd; border: 1px solid #666; border-radius: 3px; cursor: pointer; outline: none;\">Timmap Servers</button>\n      </div>\n      \n      <div class=\"gachngang\"></div>\n      <div class=\"server-header\">\n        <div class=\"header-name\">SERVER</div>\n        <div class=\"header-region\">REGION</div>\n        <div class=\"header-status\">STATUS</div>\n        <div class=\"header-score\">SCORE</div>\n      </div>\n      <div class=\"gachngang\"></div>\n    </div>\n    \n    <!-- Ø¥Ø¶Ø§ÙØ© ØµÙˆØ±Ø© Ø§Ù„Ø®Ù„ÙÙŠØ© Ù‡Ù†Ø§ Ù‚Ø¨Ù„ Ø­Ø§ÙˆÙŠØ© Ø§Ù„Ø³ÙŠØ±ÙØ±Ø§Øª -->\n    <div class=\"background-image-container\">\n      <img src=\"https://wormup.in/images/cors-proxy.php?img=Background/serverbg.jpg\" class=\"background-image\">\n    </div>\n    \n    <div class=\"servers-container\">\n      <div class=\"servers-peru\"></div>\n      <div class=\"servers-mexico\" style=\"display:none\"></div>\n      <div class=\"servers-eeuu\" style=\"display:none\"></div>\n      <div class=\"servers-canada\" style=\"display:none\"></div>\n      <div class=\"servers-germania\" style=\"display:none\"></div>\n      <div class=\"servers-francia\" style=\"display:none\"></div>\n      <div class=\"servers-singapur\" style=\"display:none\"></div>\n      <div class=\"servers-japon\" style=\"display:none\"></div>\n      <div class=\"servers-australia\" style=\"display:none\"></div>\n      <div class=\"servers-granbretana\" style=\"display:none\"></div>\n    </div>\n  </div>\n</div>\n  ");
+        _0x46fa94();
+      }
+      function _0x46fa94() {
+        $("body").append("<div id=\"custom-tooltip\" style=\"display: none; position: absolute; z-index: 9999; background: rgba(0,0,0,0.9); padding: 5px 10px; border-radius: 4px; font-size: 10px; pointer-events: none; text-align: center;\"><div style=\"display: flex; justify-content: space-between; align-items: center;\"><span style=\"color: #ffd700; text-align: right;\">TimMap Servers </span><span style=\"color: white; margin: 0 5px;\">âŸ· </span><span style=\"color: #ffd700; text-align: left;\">WormWorld Servers</span></div></div>");
+        $("body").append("<div id=\"image-tooltip\" class=\"image-tooltip\"></div>");
+        window.currentDisplayMode = "timmap";
+        $("#sort-toggle").removeClass("wormworld").text("Timmap Servers");
+        function _0x5ed011() {
+          const _0xe46aa1 = {
+            mx: "servers-mexico",
+            br: "servers-peru",
+            us: "servers-eeuu",
+            ca: "servers-canada",
+            de: "servers-germania",
+            fr: "servers-francia",
+            sg: "servers-singapur",
+            jp: "servers-japon",
+            au: "servers-australia",
+            gb: "servers-granbretana"
+          };
             $(".ui-tab").on("click", account);
             $(".flag").click(function () {
                 let getValue = $(this).attr("value");
