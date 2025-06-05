@@ -5848,7 +5848,14 @@ else {
   <div class="description-text">
   <div id="title">Wormate Friends</div>
   <div class="description-text-hiep">
-  <button id=\"sort-toggle\" style=\"font-size: 10px; padding: 1px 6px; background-color: #333; color: #ddd; border: 1px solid #666; border-radius: 3px; cursor: pointer; outline: none;\">Timmap Servers</button>
+  <div class="iframe-container" style="margin-top: -3px;">
+    <div class="spancursor">
+        <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
+        Change Version Extension
+    </div>
+<div id="graphics-settings">
+    <button id="resetScript" class="reset-button">Cache Delete</button>
+</div>
   <ul style="margin-top: 5px;" class="ui-tabs-nav">
     <li class="ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active" style="margin: -5px">
       <a> <span class="flag br" value="https://i.imgur.com/dixYLjk.png"></span> </a>
