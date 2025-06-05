@@ -6946,9 +6946,4 @@ isValidHotkey = function (e) {
         return false;
     }
 };
-
-
-
-
-
 console.log("New Update DV-PLATEN");
