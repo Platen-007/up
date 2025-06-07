@@ -3350,7 +3350,7 @@ else {
                 }, t.prototype.ki = function () {
                     this.li() && this.I(this.aa)
                 }, t
-            }(),
+            },
             ScoreTableModel = function () {
                 function t() {
                     this.ag = [], this.$f = []
