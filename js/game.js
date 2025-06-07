@@ -1131,7 +1131,7 @@ window.addEventListener("load", function () {
       _0xd29ff.N = new _0x3db195(_0xd29ff.fb);
       _0xd29ff.a = function () {
 
-        const app = (window.anApp = _0x47002d);
+        const app = (window.anApp = _0x47002d),
 
           if (handler && typeof handler.vb === 'function') {
               handler.vb(app.s.H.wb);
