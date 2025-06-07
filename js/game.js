@@ -1131,12 +1131,12 @@ window.addEventListener("load", function () {
       _0xd29ff.N = new _0x3db195(_0xd29ff.fb);
       _0xd29ff.a = function () {
 
-        const app = (window.anApp = _0x47002d),
+        const app = (window.anApp = _0x47002d);
 
-// Örnek: handler nesnesi varsa ve vb fonksiyonu içeriyorsa
-if (handler?.vb) {
-    handler.vb(app.s.H.wb);
-}
+          if (handler && typeof handler.vb === 'function') {
+              handler.vb(app.s.H.wb);
+          }
+
 
 
         setInterval(function () {
