@@ -1130,7 +1130,13 @@ window.addEventListener("load", function () {
       _0xd29ff.fb.ub = 0x1f4;
       _0xd29ff.N = new _0x3db195(_0xd29ff.fb);
       _0xd29ff.a = function () {
-        null.vb((window.anApp = _0x2ba968).s.H.wb);
+        const app = (window.anApp = _0x47002d);
+
+        // Eğer vb fonksiyonunu çağırmak için bir nesne gerekiyorsa:
+        if (app && app.vb && typeof app.vb === 'function') {
+            app.vb(app.s.H.wb);
+        }
+
         setInterval(function () {
           _0xd29ff.S(function (_0x385349, _0x1f34e8) {
             _0xd29ff.xb(_0x385349, _0x1f34e8);
