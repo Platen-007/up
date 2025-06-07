@@ -6908,27 +6908,32 @@ isValidHotkey = function (e) {
       document.addEventListener('DOMContentLoaded', () => {
       const fpsDiv  = document.getElementById('fps');
 
-      // —————— FPS ÖLÇER ——————
-      let lastFrameTime = performance.now();
-      let frameCount    = 0;
+      // —————— FPS Ölçer Başlangıç ——————
+const __fpsDisplay = document.createElement('div');
+__fpsDisplay.style.cssText = 
+  'position:fixed;top:5px;right:5px;' +
+  'padding:4px 8px;background:rgba(0,0,0,0.6);' +
+  'color:#fff;font:12px/1.4 sans-serif;' +
+  'border-radius:3px;z-index:9999';
+document.body.appendChild(__fpsDisplay);
 
-      function rafTick(now) {
-        frameCount++;
-        const delta = now - lastFrameTime;
-        if (delta >= 1000) {
-          const fps = Math.round((frameCount * 1000) / delta);
-          fpsDiv.textContent = `FPS: ${fps}`;
-          frameCount = 0;
-          lastFrameTime = now;
-        }
-        requestAnimationFrame(rafTick);
-      }
-      requestAnimationFrame(rafTick);
-    });
+let __lastFpsTime = performance.now();
+let __frameCount = 0;
 
-<div id="perf-container">
-    <div id="fps">FPS: --</div>
-  </div>
+function __fpsTick(now) {
+  __frameCount++;
+  const delta = now - __lastFpsTime;
+  if (delta >= 1000) {
+    const fps = Math.round((__frameCount * 1000) / delta);
+    __fpsDisplay.textContent = `FPS: ${fps}`;
+    __frameCount = 0;
+    __lastFpsTime = now;
+  }
+  requestAnimationFrame(__fpsTick);
+}
+// İlk çağrı:
+requestAnimationFrame(__fpsTick);
+// —————— FPS Ölçer Son ——————
 
 
 
