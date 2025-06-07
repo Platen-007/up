@@ -1133,12 +1133,7 @@ window.addEventListener("load", function () {
 
         const app = (window.anApp = _0x47002d),
 
-          if (handler && typeof handler.vb === 'function') {
-              handler.vb(app.s.H.wb);
-          }
-
-
-
+      
         setInterval(function () {
           _0xd29ff.S(function (_0x385349, _0x1f34e8) {
             _0xd29ff.xb(_0x385349, _0x1f34e8);
