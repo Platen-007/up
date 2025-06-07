@@ -3231,48 +3231,32 @@ else {
                         var options = POGL.$b.from("/images/bg-pattern-pow2-TEAM2.png");
                         return options.wrapMode = POGL.kc.lc, options;
                     }());
-                    // —————— Resource Loader & Sprite Tanımları ——————
-                    
-                    const Resource = _0x2ac030;              // Orijinal loader objesi
-                    const ImageLoader = Resource.$b;         // Resource.$b.from(...) ile kullanılıyor
-                    const SpriteCtor   = _0x16e504;          // Hex’li argümanlarla üretilen “Sprite” sınıfı
-                    
-                    // —————— Görselleri Yükle ——————
-                    
-                    this.lensImage        = new Resource._b(ImageLoader.from('/images/lens.png'));
-                    const wearAbilityImage = ImageLoader.from('/images/wear-ability.png');
-                    const headshotEmoji    = ImageLoader.from('https://i.imgur.com/EDt862t.png');
-                    const killEmoji        = ImageLoader.from('https://i.imgur.com/U5sTlhC.png');
-                    const mobileGuideImage = ImageLoader.from('https://i.imgur.com/ub4ed3R.png');
-                    const blankImage       = ImageLoader.from('###');  // placeholder
-                    
-                    // —————— Sprite Örneklerini Oluştur ——————
-                    //   (SpriteCtor(image, srcX, srcY, srcW, srcH, dstX, dstY, dstW, dstH))
-                    
-                    this.zoomSmall    = new SpriteCtor(blankImage,       156, 80,  87,  60, 170,   1.5, 128, 128);
-                    this.zoomMedium   = new SpriteCtor(blankImage,       158, 200, 95,  55, 265, 128.5, 128, 128);
-                    this.loupeSprite  = new SpriteCtor(blankImage,        79,   8, 75,  77, 265,   1.5, 128, 128);
-                    this.mobileGuide  = new SpriteCtor(mobileGuideImage,   0,   0, 87,  74, 350,  63.5, 128, 128);
-                    this.emojiHead    = new SpriteCtor(headshotEmoji,      0,   0, 256, 256, 170.5, -163.5, 128, 128);
-                    this.emojiKill    = new SpriteCtor(killEmoji,          0,   0, 256, 256, 170.5, -163.5, 128, 128);
-                    this.phraseHealth = new SpriteCtor(wearAbilityImage, 158,  86, 67, 124, 148,  63.5, 128, 128);
-                    this.phraseHurt   = new SpriteCtor(wearAbilityImage, 158,   4, 87,  74, 203,  63.5, 128, 128);
-                    this.reloadSprite = new SpriteCtor(blankImage,        156, 140, 87,  60, 170, 128.5, 128, 128);
-                    
-                    // —————— Dinamik Canvas Üreten Yardımcı ——————
-                    
-                    this.canvasHelper = (function createCanvasHelper() {
-                      const canvas = document.createElement('canvas');
-                      canvas.width  = 80;   // 0x50
-                      canvas.height = 80;   // 0x50
-                    
-                      return {
-                        element: canvas,
-                        context: canvas.getContext('2d'),
-                        // Bunu da ResourceLoader üzerinden bir image kaynağına sarıyor:
-                        imageResource: new Resource._b(ImageLoader.from(canvas))
-                      };
-                    })();
+                    this.Af = new POGL._b(POGL.$b.from("/images/lens.png"));
+                    var COMPUTE = POGL.$b.from("/images/wear-ability.png");
+
+                    var EMOJI_HEADSHOT = POGL.$b.from("https://i.imgur.com/EDt862t.png");
+                    var EMOJI_KILL = POGL.$b.from("https://i.imgur.com/U5sTlhC.png");
+
+                    var COMPUTEMOBILE_GIE = POGL.$b.from("https://i.imgur.com/ub4ed3R.png");
+                    this.Id_mobileguia = new Region(COMPUTEMOBILE_GIE, 0, 0, 87, 74, 350, 63, 128, 128);
+                    this.emoji_headshot = new Region(EMOJI_HEADSHOT, 0, 0, 256, 256, 170.5, -163.5, 128, 128);
+                    this.emoji_kill = new Region(EMOJI_KILL, 0, 0, 256, 256, 170.5, -163.5, 128, 128);
+                    this.Ph = new Region(COMPUTE, 158, 86, 67, 124, 148, 63.5, 128, 128);
+                    this.Qh = new Region(COMPUTE, 158, 4, 87, 74, 203, 63.5, 128, 128);
+                    this.Rh = new Region(COMPUTE, 4, 4, 146, 146, 63.5, 63.5, 128, 128);
+                    this.Ug = function () {
+                        var t = window.document.createElement("canvas");
+                        return t.width = 80, t.height = 80, {
+                            te: t,
+                            Tg: t.getContext("2d"),
+                            Hc: new POGL._b(POGL.$b.from(t))
+                        };
+                    }();
+                    this.Bd = {};
+                    this.yd = {};
+                    this.Sh = [];
+                    this.Th = null;
+                }
 
                 var e = function (backgroundIMG) {
                     var options = POGL.$b.from(backgroundIMG || "https://i.imgur.com/8ubx4RA.png");
@@ -3296,7 +3280,7 @@ else {
                     g();
                 },
                     init;
-            };
+            }(),
             ScenesManager = function () {
                 function t() {
                     this.H = new GameViewController, this.F = new MainMenuViewController, this.Uh = new WithdrawConsentViewController, this.Vh = new DeleteAccountViewController, this.Wh = new CoinsViewController, this.Xh = new LeadersViewController, this.Yh = new ProfileViewController, this.Zh = new LoginViewController, this.xa = new SettingsViewController, this.$h = new SkinsViewController, this._h = new StoreViewController, this.ai = new WearViewController, this.aa = new ToasterContainerViewController, this.ua = new LoadingViewController, this.pa = new PrerollViewController, this.bi = [], this.ci = null
@@ -3350,7 +3334,7 @@ else {
                 }, t.prototype.ki = function () {
                     this.li() && this.I(this.aa)
                 }, t
-            },
+            }(),
             ScoreTableModel = function () {
                 function t() {
                     this.ag = [], this.$f = []
@@ -6920,93 +6904,31 @@ isValidHotkey = function (e) {
     }
 };
 
-  document.addEventListener('DOMContentLoaded', function() {
-  // Başlangıç konumu
-  let mouseX = playerState.x;
-  let mouseY = playerState.y;
-  let pingMs = 0;
 
-  // Ping ölçme fonksiyonu
-  function updatePing() {
-    const start = Date.now();
-    fetch(window.location.href)
-      .then(() => {
-        const duration = Date.now() - start;
-        pingMs = duration;
-        if (duration > 149) {
-          pingDisplay.style.color = 'red';
-        } else if (duration > 99) {
-          pingDisplay.style.color = 'yellow';
-        } else {
-          pingDisplay.style.color = 'green';
+      document.addEventListener('DOMContentLoaded', () => {
+      const fpsDiv  = document.getElementById('fps');
+
+      // —————— FPS ÖLÇER ——————
+      let lastFrameTime = performance.now();
+      let frameCount    = 0;
+
+      function rafTick(now) {
+        frameCount++;
+        const delta = now - lastFrameTime;
+        if (delta >= 1000) {
+          const fps = Math.round((frameCount * 1000) / delta);
+          fpsDiv.textContent = `FPS: ${fps}`;
+          frameCount = 0;
+          lastFrameTime = now;
         }
-      })
-      .catch(() => {
-        pingMs = 'Error';
-        pingDisplay.style.color = 'red';
-      });
-  }
+        requestAnimationFrame(rafTick);
+      }
+      requestAnimationFrame(rafTick);
+    });
 
-  // Ping değerini gösterecek div
-  const pingDisplay = document.createElement('div');
-  pingDisplay.style.position = 'fixed';
-  pingDisplay.style.right = '5px';
-  pingDisplay.style.bottom = '5px';
-  pingDisplay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-  pingDisplay.style.color = 'white';
-  pingDisplay.style.padding = '2px 5px';
-  pingDisplay.style.fontSize = '12px';
-  pingDisplay.style.borderRadius = '3px';
-  pingDisplay.style.fontWeight = 'bold';
-  pingDisplay.style.textShadow = '1px 1px 2px rgba(0,0,0,0.5)';
-  document.body.appendChild(pingDisplay);
-
-  // Fare hareketini takip et
-  document.addEventListener('mousemove', event => {
-    mouseX = event.clientX;
-    mouseY = event.clientY;
-  });
-
-  // Animasyon ve oyuncu pozisyon güncelleme
-  function animate() {
-    // Ne kadar hareket edildi?
-    const dx = mouseX - playerState.x;
-    const dy = mouseY - playerState.y;
-    const dist = Math.hypot(dx, dy);
-
-    // Adım büyüklüğü: 7px
-    if (dist > 7) {
-      playerState.x += dx / dist * 7;
-      playerState.y += dy / dist * 7;
-    } else {
-      playerState.x = mouseX;
-      playerState.y = mouseY;
-    }
-
-    // DOM’daki “solucan” elementini hareket ettir
-    const wormEl = document.getElementById('solucan');
-    if (wormEl) {
-      wormEl.style.left = playerState.x + 'px';
-      wormEl.style.top  = playerState.y + 'px';
-    }
-
-    // Ping bilgisini güncelle
-    pingDisplay.textContent = 'Ping: ' + pingMs + 'ms';
-    requestAnimationFrame(animate);
-  }
-
-  // Uygulamayı global’e ata
-  window.anApp = appConfig;
-
-  // Eğer handler.vb fonksiyonu varsa çağıralım
-  if (handler && typeof handler.vb === 'function') {
-    handler.vb(window.anApp.s.H.wb);
-  }
-
-  // Döngüleri başlat
-  animate();
-  setInterval(updatePing, 1000);
-});
+<div id="perf-container">
+    <div id="fps">FPS: --</div>
+  </div>
 
 
 
