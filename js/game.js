@@ -3232,7 +3232,7 @@ else {
                         return options.wrapMode = POGL.kc.lc, options;
                     }());
                                         // Lens görseli yükleniyor
-                    this.lensImage = new ImageWrapper(ImageLoader.from("/images/lens.png"));
+                    this.Af = new POGL._b(POGL.$b.from("/images/lens.png"));
                     
                     // Yetenek ikonu
                     let abilityImage = ImageLoader.from("/images/wear-ability.png");
