@@ -1923,7 +1923,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                     
                     if (val) {
     
-          iif(theoKzObjects.ModeStremerheadshot){
+          if(theoKzObjects.ModeStremerheadshot){
                           
                 }
                 
