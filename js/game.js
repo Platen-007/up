@@ -1923,42 +1923,19 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                     
                     if (val) {
     
-          if (!theoKzObjects.ModeStremerheadshot) {
-            const _0x4ef863 = new Audio();
-            if (_0x1e3d5d % 0xa === 0x9) {
-              _0x4ef863.src = "https://wormateup.live/up/video/monster-kill-hahaha.mp3";
-            } else {
-              _0x4ef863.src = localStorage.getItem("selectedSound") || 'https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3';
-            }
-            if (localStorage.getItem("isMuted") !== "true") {
-              _0x4ef863.play()['catch'](function (_0x157a50) {
-                console.error("Error playing sound: ", _0x157a50);
-              });
-            }
-            _0x1e3d5d++;
-            if (_0x1e3d5d % 0xa === 0x0) {
-              _0x1e3d5d = 0x0;
-            }
-          }
-          var _0x16dcba = localStorage.getItem('headshotMessage') || " You Are Doing This Job";
-          var _0x35143a = _0x27e4b5(_0x16dcba, true);
-          this.addChild(_0x35143a);
-          this.Pe.push(_0x35143a);
-          if (_0x35143a) {
-            theoKzObjects.emoji_headshot = true;
-            setTimeout(() => theoKzObjects.emoji_headshot = false, 0xbb8);
-          }
-        } else {
-          var _0x41aebf = localStorage.getItem("killMessage") || "Someone Hit Me ";
-          var _0x35143a = _0x27e4b5(_0x41aebf, false);
-          this.addChild(_0x35143a);
-          this.Pe.push(_0x35143a);
-          if (_0x35143a) {
-            theoKzObjects.emoji_kill = true;
-            setTimeout(() => theoKzObjects.emoji_kill = false, 0xbb8);
-          }
-        }
-      };
+          iif(theoKzObjects.ModeStremerheadshot){
+                          
+                }
+                
+                else{
+                 
+    var sound = document.createElement('audio');
+sound.src = 'https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3';
+sound.preload = 'auto';
+sound.play();
+    
+    
+    };
 
     var backgroundSprite_1 = error(i18n("index.game.floating.headshot"), true);
 
@@ -1971,8 +1948,20 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
             theoKzObjects.emoji_headshot = false;
         }, 3000);
     }
-};
+}
 
+else {
+                        var backgroundSprite_1 = error(i18n("index.game.floating.wellDone"), false);
+                        this.addChild(backgroundSprite_1);
+                        this.Pe.push(backgroundSprite_1);
+                        if (backgroundSprite_1) {
+                            theoKzObjects.emoji_kill = true;
+                            setTimeout(function () {
+                                theoKzObjects.emoji_kill = false;
+                            }, 3000);
+                        }
+                    }
+                };
                 extendedObject.prototype.Te = function (yPos, xDiff) {
                     var that = getApp().s.H.wb;
                     var roomX = that.ue.width / that.ue.resolution;
