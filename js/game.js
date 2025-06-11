@@ -5618,8 +5618,243 @@ else {
           
           `);
 
-      $("#mm-store").after("\n    <div id=\"mm-store\" style=\"float: right; position: relative; margin-right: 10px; min-width: 140px;\">\n        <div style=\"margin: 0;\" id=\"loa831pibur0w4gv\">\n            <div onclick=\"openPopup()\">\n                <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: yellow; font-size: 25px;\"></i> Settings\n            </div>\n            <div id=\"popup\" class=\"popup\">\n                <div class=\"phdr1\" style=\"display: flex; justify-content: center; align-items: center;\">\n                    <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: yellow; font-size: 25px; margin-right: 10px;\"></i> \n                    <span>Player Settings<span>\n                </div>\n                <button class=\"close-button\" onclick=\"closePopup()\">Close</button>\n\n                <!-- 3.KÄ±sÄ±m 4.KÄ±sÄ±m -->\n                <div class=\"tab-buttons\" style=\"display: flex; justify-content: space-around; margin-bottom: 10px;\">\n                    <button class=\"tab-button active\" onclick=\"openTab('gameSettings')\">ğŸ”§ General Setting</button>\n                    <button class=\"tab-button\" onclick=\"openTab('messageSettings')\">ğŸSnake HS Animation</button>\n                    <button class=\"tab-button\" onclick=\"openTab('backgroundSettings')\">ğŸ¶Mouse Background</button>\n                </div>\n\n                <!-- 14.kÄ±sÄ±m 12.kÄ±sÄ±m 13.kÄ±sÄ±m -->\n                <div id=\"gameSettings\" class=\"tab-content active\">\n                    <div id="kich-hoat">ID:<input type="text" value="${theoKzObjects.FB_UserID}" class="you-id"/><button class="you-id-copy" onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('You ID ${theoKzObjects.FB_UserID} copiado! copied!'));">COPY</button></div>\n                    <table>\n                        <tbody>\n                            <tr>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> Eat Fast:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-Abilityzoom-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-Abilityzoom-switch\"></label>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> Streamer Mode:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-stremingmode-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-stremingmode-switch\"></label>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> Total HS:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-stremingmodesaveheadshot-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-stremingmodesaveheadshot-switch\"></label>\n                                    </div>\n                                </td>\n                            </tr>\n                            <tr>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> 1 Top:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-stremingmodebatop-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-stremingmodebatop-switch\"></label>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> Off Emoj:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-stremingmodeemoj-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-stremingmodeemoj-switch\"></label>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            ğŸ”Š\n                                        </span>\n  <select id=\"sound-selector\">\n    <option value=\"https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3\">Head Shot</option>\n    <option value=\"https://wormateup.live/up/video/emaat.mp3\">ÙˆÙ„Ùƒ Ø§Ù…Ø¹Ø·</option>\n    <option value=\"https://www.myinstants.com/media/sounds/sniper-shot.mp3\">Sniper</option>\n    <option value=\"https://www.myinstants.com/media/sounds/headshot_6.mp3\">Head Shot2</option>\n    <option value=\"https://www.myinstants.com/media/sounds/999_Z871W0o.mp3\">Ø§Ù„Ù‚Ù…</option>\n    <option value=\"https://www.myinstants.com/media/sounds/bye-bye-mikey-tokyo-revengers.mp3\">Bye Bye</option>\n    <option value=\"https://wormateup.live/up/video/Aelo-Adi.MP3\">Ø§Ø¯ÙŠÙ„ÙˆÙˆ Ø§Ø¯ÙŠ</option>\n    <option value=\"https://wormateup.live/up/video/alalobee.mp3\">Ø¹ Ù„ÙˆÙˆØ¨ÙŠ</option>\n    <option value=\"https://wormateup.live/up/video/laugh.mp3\">Laugh Ù‡Ù‡Ù‡Ù‡Ù‡</option>\n    <option value=\"https://wormateup.live/up/video/mario-jump.mp3\">Mario Jump</option>\n    <option value=\"https://wormateup.live/up/video/pew.mp3\">Pew</option>\n    <option value=\"https://wormateup.live/up/video/pingo.mp3\">Pingo</option>\n    <option value=\"https://wormateup.live/up/video/wak-wak.mp3\">wak wak</option>\n  </select>\n  <input class=\"settings-switchZoom\" id=\"settings-stremingmodeheadshot-switch\" type=\"checkbox\" />\n  <label for=\"settings-stremingmodeheadshot-switch\"></label>\n  <label for=\"sound-selector\"></label>\n</div>\n\n<script>\n  // Ø¹Ù†Ø§ØµØ± Ø§Ù„ØªØ­ÙƒÙ…\n  const soundSelector = document.getElementById('sound-selector');\n  const muteSwitch = document.getElementById('settings-stremingmodeheadshot-switch');\n\n  // Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø£ØµÙˆØ§Øª\n  let audioSrc = localStorage.getItem('selectedSound') || ''; // Ø§Ù„ØµÙˆØª Ø§Ù„Ø§ÙØªØ±Ø§Ø¶ÙŠ ÙØ§Ø±Øº\n  let audio = null; // ÙƒØ§Ø¦Ù† Ø§Ù„ØµÙˆØª ØºÙŠØ± Ù…Ù‡ÙŠØ£\n  let isMuted = localStorage.getItem('isMuted') === 'true'; // Ø§Ù„ØªØ­Ù‚Ù‚ Ù…Ù† Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ù„ØµÙˆØª\n\n  // Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„ØµÙˆØª Ø§Ù„Ø£ÙˆÙ„ÙŠØ©\n  soundSelector.value = audioSrc;\n  muteSwitch.checked = isMuted;\n\n  // ØªØ­Ø¯ÙŠØ« Ø§Ù„ØµÙˆØª Ø¹Ù†Ø¯ Ø§Ù„ØªØºÙŠÙŠØ± ÙÙŠ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©\n  soundSelector.addEventListener('change', (e) => {\n    audioSrc = e.target.value;\n    localStorage.setItem('selectedSound', audioSrc);\n    if (!isMuted) {\n      if (audio) audio.pause(); // Ø¥ÙŠÙ‚Ø§Ù Ø£ÙŠ ØµÙˆØª Ù‚ÙŠØ¯ Ø§Ù„ØªØ´ØºÙŠÙ„\n      audio = new Audio(audioSrc); // Ø¥Ù†Ø´Ø§Ø¡ ÙƒØ§Ø¦Ù† ØµÙˆØª Ø¬Ø¯ÙŠØ¯\n      audio.play(); // ØªØ´ØºÙŠÙ„ Ø§Ù„ØµÙˆØª Ø§Ù„Ø¬Ø¯ÙŠØ¯\n    }\n  });\n\n  // ØªØ¹Ø·ÙŠÙ„ Ø§Ù„ØµÙˆØª\n  muteSwitch.addEventListener('change', () => {\n    isMuted = muteSwitch.checked;\n    localStorage.setItem('isMuted', isMuted);\n    if (isMuted && audio) {\n      audio.pause(); // Ø¥ÙŠÙ‚Ø§Ù Ø§Ù„ØµÙˆØª Ø¥Ø°Ø§ ØªÙ… ÙƒØªÙ…Ù‡\n    }\n  });\n\n  // ØªØ´ØºÙŠÙ„ Ø§Ù„ØµÙˆØª Ø¹Ù†Ø¯ ØªÙ…Ø±ÙŠØ± Ø§Ù„Ù…Ø§ÙˆØ³ Ø¹Ù„Ù‰ Ø§Ù„Ø®ÙŠØ§Ø±Ø§Øª\n  const options = soundSelector.querySelectorAll('option');\n  options.forEach((option) => {\n    option.addEventListener('mouseover', () => {\n      if (!isMuted) {\n        const hoverAudio = new Audio(option.value); // Ø¥Ù†Ø´Ø§Ø¡ ÙƒØ§Ø¦Ù† ØµÙˆØª Ø¹Ù†Ø¯ Ø§Ù„Ù…Ø±ÙˆØ±\n        hoverAudio.play();\n      }\n    });\n  });\n\n  // Ù„Ø§ ÙŠØªÙ… ØªØ´ØºÙŠÙ„ Ø§Ù„ØµÙˆØª Ø§Ù„Ø£ÙˆÙ„ÙŠ Ù‡Ù†Ø§\n</script>\n\n<script>\n\n</script>\n\n            </div>\n\n                   </td>\n                  </tr>\n                </tbody>\n              </table>\n\n              <div class=\"list2\">\n            <div class=\"list2\">\n              <i class=\"fa fa-pencil-square-o\" style=\"color: #ce00ff; font-size: 17px;\"></i> automatic for snake <a href=\"/\">Q key</a>: You can return wherever you are with    \n                </div>\n            <div class=\"list2\">\n             <i class=\"fa fa-pencil-square-o\" style=\"color: #ce00ff; font-size: 17px;\"></i>  <a href=\"/\">R Key</a> When your automatic snake explodes, it will restart.   \n\n            </div>\n                        <div class=\"list2\">\n             <i class=\"fa fa-pencil-square-o\" style=\"color: #ce00ff; font-size: 17px;\"></i>   <a href=\"/\">Z key</a>    You can turn off the zoom directly in the game with .\n\n            </div>\n    \n          </div>\n\n          </div>\n\n            \n            <div id=\"messageSettings\" class=\"tab-content\" style=\"display:none;\">\n                <h3>You can change the text on the heads you throw in the game from here.</h3>\n                <div style=\"display: flex; justify-content: center; align-items: center; flex-direction: row;\">\n                    <div style=\"margin-bottom: 15px; width: 100%; max-width: 200px;\">\n                        <label for=\"killSelect\">Multiplication Text</label>\n                        <select id=\"killSelect\" style=\"width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;\">\n                            <option value=\"Well Done!\">Well Done!</option>\n                            <option value=\"I think he was hit by a truckğŸ¤£\">I think it was hit by a tractor ğŸ¤£</option>\n                            <option value=\" Depremmi Oldu\">ğŸ¤£  Was there an earthquake? ğŸ¤£</option>\n                            <option value=\"Aha Car HitğŸ¤£\">Aha The Car CrashedğŸ¤£</option>\n                            <option value= 0 O Neydi  qÄ±zz!ğŸ™€\">What was that girl!ğŸ™€</option>\n\n                        </select>\n                    </div>\n            \n                    <div style=\"margin-bottom: 15px; width: 100%; max-width: 200px; margin-right: 20px;\">\n                        <label for=\"headshotSelect\">:Select Headshot Text</label>\n                        <select id=\"headshotSelect\" style=\"width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;\">\n                            <option value=\"HEADSHOT\">HEADSHOT</option>\n                            <option value=\"Ø¥What happened to my leaf?\">what happenedyapramğŸ¤£</option>\n                            <option value=\" But How Did I Hit You?ğŸ¤£ ğŸ”ª\">But How Did I Hit You? ğŸ¤£ ğŸ”ª</option>\n                            <option value=\" HEADSHOT â˜ ï¸\">HEADSHOT â˜ ï¸</option>\n\n                        </select>\n                    </div>\n                </div>\n                <button onclick=\"saveMessages()\" style=\"margin-top: 5px;\">Save </button>\n            </div>\n\n                <!-- Ù…Ø­ØªÙˆÙ‰ ØªØ¨ÙˆÙŠØ¨ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø®Ù„ÙÙŠØ§Øª (ØªÙ… Ø­Ø°Ù ÙƒØ§ÙØ© Ø§Ù„Ø®Ù„ÙÙŠØ§Øª) -->\n                <div id=\"backgroundSettings\" class=\"tab-content\" style=\"display:none;\">\n              <table>\n                <tbody>\n                  <tr>\n                    <td>\n                      <div class=\"spancursor\">\n                        <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #ff8f00; font-size: 25px;\"></i> Select Curos\n                      </div>\n                      <div class=\"cursor-container\">\n                        <div id=\"default-cursor-btn\">\n                          <img style=\"margin-top: -45px; margin-right: 60px; float: right; width: 25px; height: 28px;\" class=\"img\" alt=\"Imgur-Upload\" src=\"https://i.imgur.com/rI522o3.png\">\n                        </div>\n                      </div>\n                    </td>\n                    <td>\n                      <div class=\"spancursor\">\n                        <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #ff8f00; font-size: 25px;\"></i> Select Backgound\n                      </div>\n                      <div class=\"background-container\"></div>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n\n    <style>\n        /* ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„ØªØ¨ÙˆÙŠØ¨Ø§Øª */\n        .tab-buttons button {\n            padding: 10px;\n            background-color: #ddd;\n            border: none;\n            cursor: pointer;\n            flex: 1;\n            text-align: center;\n        }\n\n        .tab-buttons button.active {\n            background-color: #0d7aef;\n            color: white;\n        }\n\n        .tab-content {\n            display: none;\n        }\n\n        .tab-content.active {\n            display: block;\n        }\n\n        /* ØªÙ†Ø³ÙŠÙ‚ Ø®ÙŠØ§Ø±Ø§Øª Ø§Ù„Ø®Ù„ÙÙŠØ© */\n        .background-options {\n            margin-top: 20px;\n        }\n\n        /* ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„Ø¹Ù†Ø§ØµØ± Ø¯Ø§Ø®Ù„ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ */\n        .settings-labelZoom {\n            font-size: 16px;\n        }\n\n\n\n        /* ØªÙ†Ø³ÙŠÙ‚ Ù…Ø­ØªÙˆÙ‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ */\n        #messageSettings {\n            display: flex;\n            flex-direction: row; /* ÙˆØ¶Ø¹ Ø§Ù„Ø¹Ù†Ø§ØµØ± ÙÙŠ ØµÙ */\n            justify-content: center; /* Ù…Ø­Ø§Ø°Ø§Ø© Ø§Ù„Ø¹Ù†Ø§ØµØ± ÙÙŠ Ø§Ù„Ù…Ù†ØªØµÙ */\n            align-items: center;\n        }\n\n        #messageSettings div {\n            width: 100%;\n            max-width: 100%;\n        }\n    </style>\n\n    <script>\n        // Ø¯Ø§Ù„Ø© Ø§Ù„ØªÙ†Ù‚Ù„ Ø¨ÙŠÙ† Ø§Ù„ØªØ¨ÙˆÙŠØ¨Ø§Øª\n        function openTab(tabId) {\n            const contents = document.querySelectorAll('.tab-content');\n            const buttons = document.querySelectorAll('.tab-button');\n\n            contents.forEach(content => content.style.display = 'none');\n            buttons.forEach(button => button.classList.remove('active'));\n\n            document.getElementById(tabId).style.display = 'block';\n            event.target.classList.add('active');\n        }\n\n\n// Ø¯Ø§Ù„Ø© Ù„Ø­ÙØ¸ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„\nfunction saveMessages() {\n    // Ø§Ø³ØªØ±Ø¬Ø§Ø¹ Ø§Ù„Ù‚ÙŠÙ… Ù…Ù† Ø§Ù„Ù‚ÙˆØ§Ø¦Ù… Ø§Ù„Ù…Ù†Ø³Ø¯Ù„Ø©\n    const headshotMessage = document.getElementById(\"headshotSelect\").value;\n    const killMessage = document.getElementById(\"killSelect\").value;\n\n    // Ø­ÙØ¸ Ø§Ù„Ù‚ÙŠÙ… ÙÙŠ localStorage\n    localStorage.setItem(\"headshotMessage\", headshotMessage);\n    localStorage.setItem(\"killMessage\", killMessage);\n\n    // Ø¹Ø±Ø¶ Ø±Ø³Ø§Ù„Ø© ØªØ£ÙƒÙŠØ¯\n    alert(\"It has been successfully registered!\");\n\n    // Ù„Ø¹Ø±Ø¶ Ø§Ù„Ù‚ÙŠÙ… Ø§Ù„Ù…Ø¯Ø®Ù„Ø© ÙÙŠ ÙˆØ­Ø¯Ø© Ø§Ù„ØªØ­ÙƒÙ… Ù„ØªØªØ£ÙƒØ¯ Ù…Ù† Ø§Ù„Ø­ÙØ¸\n    console.log(\"Headshot Message: \" + headshotMessage);\n    console.log(\"Kill Message: \" + killMessage);\n}\n\n// Ø¯Ø§Ù„Ø© Ù„Ø§Ø³ØªØ±Ø¬Ø§Ø¹ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ù…Ø®Ø²Ù†Ø© Ù…Ù† localStorage Ø¹Ù†Ø¯ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØµÙØ­Ø©\nfunction loadMessages() {\n    // Ø§Ø³ØªØ±Ø¬Ø§Ø¹ Ø§Ù„Ù‚ÙŠÙ… Ù…Ù† localStorage\n    const savedHeadshot = localStorage.getItem(\"headshotMessage\");\n    const savedKill = localStorage.getItem(\"killMessage\");\n\n    // Ø§Ù„ØªØ­Ù‚Ù‚ Ù…Ù† Ø£Ù† Ø§Ù„Ù‚ÙŠÙ… Ù…Ø®Ø²Ù†Ø© ÙÙŠ localStorage\n    if (savedHeadshot) {\n        const headshotSelect = document.getElementById(\"headshotSelect\");\n        if (headshotSelect) {\n            headshotSelect.value = savedHeadshot;\n        }\n    }\n    if (savedKill) {\n        const killSelect = document.getElementById(\"killSelect\");\n        if (killSelect) {\n            killSelect.value = savedKill;\n        }\n    }\n\n    // Ù„Ø¹Ø±Ø¶ Ø§Ù„Ù‚ÙŠÙ… ÙÙŠ ÙˆØ­Ø¯Ø© Ø§Ù„ØªØ­ÙƒÙ… Ù„Ù„ØªØ£ÙƒØ¯ Ù…Ù† Ø§Ø³ØªØ±Ø¬Ø§Ø¹Ù‡Ø§ Ø¨Ø´ÙƒÙ„ ØµØ­ÙŠØ­\n    console.log(\"Loaded Headshot Message: \" + savedHeadshot);\n    console.log(\"Loaded Kill Message: \" + savedKill);\n}\n\n// Ø§Ø³ØªØ±Ø¬Ø§Ø¹ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ù…Ø®Ø²Ù†Ø© Ø¹Ù†Ø¯ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØµÙØ­Ø© Ø£Ùˆ Ø¨Ø¹Ø¯ Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ù…Ø­ØªÙˆÙ‰ Ø§Ù„Ø¬Ø¯ÙŠØ¯\nfunction initializeSettings() {\n    setTimeout(() => {\n        loadMessages();\n    }, 100); // ØªØ£Ø®ÙŠØ± Ø¨Ø³ÙŠØ· Ù„Ù„ØªØ£ÙƒØ¯ Ù…Ù† ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ù…Ø­ØªÙˆÙ‰\n}\n\n// Ø§Ø³ØªØ¯Ø¹Ø§Ø¡ initializeSettings Ø¹Ù†Ø¯ Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ù…Ø­ØªÙˆÙ‰ Ø£Ùˆ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØµÙØ­Ø©\ninitializeSettings();\n\n\n\n\n\n        // Ø¯Ø§Ù„Ø© Ù„Ø­ÙØ¸ Ø§Ù„Ø®Ù„ÙÙŠØ©\n        function saveBackground() {\n            const background = document.getElementById(\"backgroundSelect\").value;\n            localStorage.setItem(\"selectedBackground\", background);\n\n            alert(\"ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø®Ù„ÙÙŠØ© Ø¨Ù†Ø¬Ø§Ø­!\");\n        }\n    </script>\n");
+$('#mm-store').after(`<div id="mm-store" style="float: right; position: relative; margin-right: 10px; min-width: 140px;">
+        <div style="margin: 0;" id="loa831pibur0w4gv">
+            <div onclick="openPopup()">
+                <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: yellow; font-size: 25px;"></i> Settings
+            </div>
+            <div id="popup" class="popup" style="display: none;">
+                <div class="phdr1" style="display: flex; justify-content: center; align-items: center;">
+                    <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: yellow; font-size: 25px; margin-right: 10px;"></i> 
+                    <span>Player Settings<span>
+                </span></span></div>
+                <button class="close-button" onclick="closePopup()">Close</button>
 
+                <!-- 3.Kısım 4.Kısım -->
+                <div class="tab-buttons" style="display: flex; justify-content: space-around; margin-bottom: 10px;">
+                    <button class="tab-button active" onclick="openTab('gameSettings')">🔧 General Setting</button>
+                    <button class="tab-button" onclick="openTab('messageSettings')">🐍Snake HS Animation</button>
+                    <button class="tab-button" onclick="openTab('backgroundSettings')">🐶Mouse Background</button>
+                </div>
+
+                <!-- 14.kısım 12.kısım 13.kısım -->
+                <div id="gameSettings" class="tab-content active" style="display: block;">
+                    <div id="kich-hoat">
+                        ID: <input type="text" value="gg_106263452150533879793" class="you-id">
+                        <button class="you-id-copy" onclick="navigator.clipboard.writeText('gg_106263452150533879793').then(() =&gt; alert('Your ID gg_106263452150533879793 Copy!'));">
+                            COPY
+                        </button>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="settings-lineZoom">
+                                        <span class="settings-labelZoom">
+                                            <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Eat Fast:
+                                        </span>
+                                        <input class="settings-switchZoom" id="settings-Abilityzoom-switch" type="checkbox">
+                                        <label for="settings-Abilityzoom-switch"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="settings-lineZoom">
+                                        <span class="settings-labelZoom">
+                                            <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Streamer Mode:
+                                        </span>
+                                        <input class="settings-switchZoom" id="settings-stremingmode-switch" type="checkbox">
+                                        <label for="settings-stremingmode-switch"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="settings-lineZoom">
+                                        <span class="settings-labelZoom">
+                                            <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Total HS:
+                                        </span>
+                                        <input class="settings-switchZoom" id="settings-stremingmodesaveheadshot-switch" type="checkbox">
+                                        <label for="settings-stremingmodesaveheadshot-switch"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="settings-lineZoom">
+                                        <span class="settings-labelZoom">
+                                            <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> 1 Top:
+                                        </span>
+                                        <input class="settings-switchZoom" id="settings-stremingmodebatop-switch" type="checkbox">
+                                        <label for="settings-stremingmodebatop-switch"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="settings-lineZoom">
+                                        <span class="settings-labelZoom">
+                                            <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Off Emoj:
+                                        </span>
+                                        <input class="settings-switchZoom" id="settings-stremingmodeemoj-switch" type="checkbox">
+                                        <label for="settings-stremingmodeemoj-switch"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="settings-lineZoom">
+                                        <span class="settings-labelZoom">
+                                            🔊
+                                        </span>
+  <select id="sound-selector">
+    <option value="https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3">Head Shot</option>
+    <option value="https://wormateup.live/up/video/emaat.mp3">ولك امعط</option>
+    <option value="https://www.myinstants.com/media/sounds/sniper-shot.mp3">Sniper</option>
+    <option value="https://www.myinstants.com/media/sounds/headshot_6.mp3">Head Shot2</option>
+    <option value="https://www.myinstants.com/media/sounds/999_Z871W0o.mp3">القم</option>
+    <option value="https://www.myinstants.com/media/sounds/bye-bye-mikey-tokyo-revengers.mp3">Bye Bye</option>
+    <option value="https://wormateup.live/up/video/Aelo-Adi.MP3">اديلوو ادي</option>
+    <option value="https://wormateup.live/up/video/alalobee.mp3">ع لووبي</option>
+    <option value="https://wormateup.live/up/video/laugh.mp3">Laugh ههههه</option>
+    <option value="https://wormateup.live/up/video/mario-jump.mp3">Mario Jump</option>
+    <option value="https://wormateup.live/up/video/pew.mp3">Pew</option>
+    <option value="https://wormateup.live/up/video/pingo.mp3">Pingo</option>
+    <option value="https://wormateup.live/up/video/wak-wak.mp3">wak wak</option>
+  </select>
+  <input class="settings-switchZoom" id="settings-stremingmodeheadshot-switch" type="checkbox">
+  <label for="settings-stremingmodeheadshot-switch"></label>
+  <label for="sound-selector"></label>
+</div>
+
+<script>
+  // عناصر التحكم
+  const soundSelector = document.getElementById('sound-selector');
+  const muteSwitch = document.getElementById('settings-stremingmodeheadshot-switch');
+
+  // قائمة الأصوات
+  let audioSrc = localStorage.getItem('selectedSound') || ''; // الصوت الافتراضي فارغ
+  let audio = null; // كائن الصوت غير مهيأ
+  let isMuted = localStorage.getItem('isMuted') === 'true'; // التحقق من إعداد الصوت
+
+  // إعدادات الصوت الأولية
+  soundSelector.value = audioSrc;
+  muteSwitch.checked = isMuted;
+
+  // تحديث الصوت عند التغيير في القائمة
+  soundSelector.addEventListener('change', (e) => {
+    audioSrc = e.target.value;
+    localStorage.setItem('selectedSound', audioSrc);
+    if (!isMuted) {
+      if (audio) audio.pause(); // إيقاف أي صوت قيد التشغيل
+      audio = new Audio(audioSrc); // إنشاء كائن صوت جديد
+      audio.play(); // تشغيل الصوت الجديد
+    }
+  });
+
+  // تعطيل الصوت
+  muteSwitch.addEventListener('change', () => {
+    isMuted = muteSwitch.checked;
+    localStorage.setItem('isMuted', isMuted);
+    if (isMuted && audio) {
+      audio.pause(); // إيقاف الصوت إذا تم كتمه
+    }
+  });
+
+  // تشغيل الصوت عند تمرير الماوس على الخيارات
+  const options = soundSelector.querySelectorAll('option');
+  options.forEach((option) => {
+    option.addEventListener('mouseover', () => {
+      if (!isMuted) {
+        const hoverAudio = new Audio(option.value); // إنشاء كائن صوت عند المرور
+        hoverAudio.play();
+      }
+    });
+  });
+
+  // لا يتم تشغيل الصوت الأولي هنا
+</script>
+
+<script>
+
+</script>
+
+            
+
+                   </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="list2">
+            <div class="list2">
+              <i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> automatic for snake <a href="/">Q key</a>: You can return wherever you are with    
+                </div>
+            <div class="list2">
+             <i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i>  <a href="/">R Key</a> When your automatic snake explodes, it will restart.   
+
+            </div>
+                        <div class="list2">
+             <i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i>   <a href="/">Z key</a>    You can turn off the zoom directly in the game with .
+
+            </div>
+    
+          </div>
+
+          </div>
+
+            
+            <div id="messageSettings" class="tab-content" style="display:none;">
+                <h3>You can change the text on the heads you throw in the game from here.</h3>
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: row;">
+                    <div style="margin-bottom: 15px; width: 100%; max-width: 200px;">
+                        <label for="killSelect">Multiplication Text</label>
+                        <select id="killSelect" style="width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;">
+                            <option value="Well Done!">Well Done!</option>
+                            <option value="I think he was hit by a truck🤣">I think it was hit by a tractor 🤣</option>
+                            <option value=" Depremmi Oldu">🤣  Was there an earthquake? 🤣</option>
+                            <option value="Aha Car Hit🤣">Aha The Car Crashed🤣</option>
+                            <option value="0" o="" neydi="" qızz!🙀"="">What was that girl!🙀</option>
+
+                        </select>
+                    </div>
+            
+                    <div style="margin-bottom: 15px; width: 100%; max-width: 200px; margin-right: 20px;">
+                        <label for="headshotSelect">:Select Headshot Text</label>
+                        <select id="headshotSelect" style="width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;">
+                            <option value="HEADSHOT">HEADSHOT</option>
+                            <option value="إWhat happened to my leaf?">what happenedyapram🤣</option>
+                            <option value=" But How Did I Hit You?🤣 🔪">But How Did I Hit You? 🤣 🔪</option>
+                            <option value=" HEADSHOT ☠️">HEADSHOT ☠️</option>
+
+                        </select>
+                    </div>
+                </div>
+                <button onclick="saveMessages()" style="margin-top: 5px;">Save </button>
+            </div>
+
+                <!-- محتوى تبويب إعدادات الخلفيات (تم حذف كافة الخلفيات) -->
+                <div id="backgroundSettings" class="tab-content" style="display: none;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="spancursor">
+                        <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #ff8f00; font-size: 25px;"></i> Select Curos
+                      </div>
+                      <div class="cursor-container">
+                        <div id="default-cursor-btn">
+                          <img style="margin-top: -45px; margin-right: 60px; float: right; width: 25px; height: 28px;" class="img" alt="Imgur-Upload" src="https://i.imgur.com/rI522o3.png">
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="spancursor">
+                        <i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #ff8f00; font-size: 25px;"></i> Select Backgound
+                      </div>
+                      <div class="background-container"></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    `);
 
            $("#loa831pibur0w4gv").replaceWith(`
            
