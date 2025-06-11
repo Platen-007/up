@@ -3231,13 +3231,7 @@ else {
                         var options = POGL.$b.from("/images/bg-pattern-pow2-TEAM2.png");
                         return options.wrapMode = POGL.kc.lc, options;
                     }());
-                    this.Af = new POGL._b(POGL.$b.from("/images/lens.png"));
-                    var COMPUTE = POGL.$b.from("/images/wear-ability.png");
-
-                    var EMOJI_HEADSHOT = POGL.$b.from("https://i.imgur.com/EDt862t.png");
-                    var EMOJI_KILL = POGL.$b.from("https://i.imgur.com/U5sTlhC.png");
-
-                    // Lens görseli yükleniyor
+                                        // Lens görseli yükleniyor
                     this.lensImage = new ImageWrapper(ImageLoader.from("/images/lens.png"));
                     
                     // Yetenek ikonu
@@ -3269,6 +3263,7 @@ else {
                     this.abilityIcon1 = new Sprite(abilityImage, 158, 86, 67, 124, 148, 63.5, 128, 128);
                     this.abilityIcon2 = new Sprite(abilityImage, 158, 4, 87, 74, 203, 63.5, 128, 128);
                     this.statusIcon = new Sprite(spritesheetImage, 156, 140, 87, 60, 170, 128.5, 128, 128);
+
                     this.Ug = function () {
                         var t = window.document.createElement("canvas");
                         return t.width = 80, t.height = 80, {
