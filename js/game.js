@@ -1971,20 +1971,8 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
             theoKzObjects.emoji_headshot = false;
         }, 3000);
     }
-}
+};
 
-else {
-                        var backgroundSprite_1 = error(i18n("index.game.floating.wellDone"), false);
-                        this.addChild(backgroundSprite_1);
-                        this.Pe.push(backgroundSprite_1);
-                        if (backgroundSprite_1) {
-                            theoKzObjects.emoji_kill = true;
-                            setTimeout(function () {
-                                theoKzObjects.emoji_kill = false;
-                            }, 3000);
-                        }
-                    }
-                };
                 extendedObject.prototype.Te = function (yPos, xDiff) {
                     var that = getApp().s.H.wb;
                     var roomX = that.ue.width / that.ue.resolution;
