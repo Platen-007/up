@@ -3231,39 +3231,24 @@ else {
                         var options = POGL.$b.from("/images/bg-pattern-pow2-TEAM2.png");
                         return options.wrapMode = POGL.kc.lc, options;
                     }());
-                                        // Lens görseli yükleniyor
                     this.Af = new POGL._b(POGL.$b.from("/images/lens.png"));
-                    
-                    // Yetenek ikonu
-                    var COMPUTE = POGL.$b.from("/images/wear-ability.png")
-                    
-                    // Baş atış ve öldürme emojileri
+                    var COMPUTE = POGL.$b.from("/images/wear-ability.png");
+
                     var EMOJI_HEADSHOT = POGL.$b.from("https://i.imgur.com/EDt862t.png");
                     var EMOJI_KILL = POGL.$b.from("https://i.imgur.com/U5sTlhC.png");
-                    
-                    // Mobil rehber görseli
-                   var COMPUTEMOBILE_GIE = POGL.$b.from("https://i.imgur.com/ub4ed3R.png");
-                    
-                    // Diğer sprite sheet
-                    var spritesheetImage = ImageLoader.from("https://i.imgur.com/LFiCido.png");
-                    
-                    // Yakınlaştırma görselleri
-                    this.zoom_5x = new Sprite(spritesheetImage, 156, 80, 87, 60, 170, 1.5, 128, 128);
-                    this.zoom_10x = new Sprite(spritesheetImage, 158, 200, 95, 55, 265, 128.5, 128, 128);
-                    this.zoom_max = new Sprite(spritesheetImage, 79, 8, 75, 77, 265, 1.5, 128, 128);
-                    
-                    // Mobil rehber ikonu
-                    this.mobileGuide = new Sprite(mobileGuideImage, 0, 0, 87, 74, 350, 63, 128, 128);
-                    
-                    // Emojiler
-                    this.emojiHeadshot = new Sprite(headshotEmoji, 0, 0, 256, 256, 170.5, -163.5, 128, 128);
-                    this.emojiKill = new Sprite(killEmoji, 0, 0, 256, 256, 170.5, -163.5, 128, 128);
-                    
-                    // Belki de oyuncu yetenek göstergeleri
-                    this.abilityIcon1 = new Sprite(abilityImage, 158, 86, 67, 124, 148, 63.5, 128, 128);
-                    this.abilityIcon2 = new Sprite(abilityImage, 158, 4, 87, 74, 203, 63.5, 128, 128);
-                    this.statusIcon = new Sprite(spritesheetImage, 156, 140, 87, 60, 170, 128.5, 128, 128);
 
+                    var COMPUTEMOBILE_GIE = POGL.$b.from("https://i.imgur.com/ub4ed3R.png");
+            	     var _AE_İMAGE = POGL.$b.from('https://i.imgur.com/LFiCido.png');
+                    this.X_x5 = new Region(_AE_İMAGE, 0x9c, 0x50, 0x57, 0x3c, 0xaa, 1.5, 0x80, 0x80);
+                    this.X_x5 = new Region(_AE_İMAGE, 0x9c, 0x50, 0x57, 0x3c, 0xaa, 1.5, 0x80, 0x80);
+                    this.X_x10 = new Region(_AE_İMAGE, 0x9e, 0xc8, 0x5f, 0x37, 0x109, 128.5, 0x80, 0x80);
+                    this.X_xxlupa = new Region(_AE_İMAGE, 0x4f, 0x8, 0x4b, 0x4d, 0x109, 1.5, 0x80, 0x80);
+                    this.Id_mobileguia = new Region(_0x8d3486, 0x0, 0x0, 0x57, 0x4a, 0x15e, 0x3f, 0x80, 0x80);
+                    this.emoji_headshot = new Region(_0x311798, 0x0, 0x0, 0x100, 0x100, 170.5, -163.5, 0x80, 0x80);
+                    this.emoji_kill = new Region(_0x224eef, 0x0, 0x0, 0x100, 0x100, 170.5, -163.5, 0x80, 0x80);
+                    this.Ph = new Region(_0x4b81e5, 0x9e, 0x56, 0x43, 0x7c, 0x94, 63.5, 0x80, 0x80);
+                    this.Qh = new Region(_0x4b81e5, 0x9e, 0x4, 0x57, 0x4a, 0xcb, 63.5, 0x80, 0x80);
+                    this.Rh = new Region(_AE_İMAGE, 0x9c, 0x8c, 0x57, 0x3c, 0xaa, 128.5, 0x80, 0x80);
                     this.Ug = function () {
                         var t = window.document.createElement("canvas");
                         return t.width = 80, t.height = 80, {
