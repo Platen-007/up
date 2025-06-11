@@ -3235,17 +3235,17 @@ else {
                     this.Af = new POGL._b(POGL.$b.from("/images/lens.png"));
                     
                     // Yetenek ikonu
-                    let abilityImage = ImageLoader.from("/images/wear-ability.png");
+                    var COMPUTE = POGL.$b.from("/images/wear-ability.png")
                     
                     // Baş atış ve öldürme emojileri
-                    let headshotEmoji = ImageLoader.from("https://i.imgur.com/EDt862t.png");
-                    let killEmoji = ImageLoader.from("https://i.imgur.com/U5sTlhC.png");
+                    var EMOJI_HEADSHOT = POGL.$b.from("https://i.imgur.com/EDt862t.png");
+                    var EMOJI_KILL = POGL.$b.from("https://i.imgur.com/U5sTlhC.png");
                     
                     // Mobil rehber görseli
-                    let mobileGuideImage = ImageLoader.from("https://i.imgur.com/ub4ed3R.png");
+                   var COMPUTEMOBILE_GIE = POGL.$b.from("https://i.imgur.com/ub4ed3R.png");
                     
                     // Diğer sprite sheet
-                    let spritesheetImage = ImageLoader.from("https://i.imgur.com/LFiCido.png");
+                    var spritesheetImage = ImageLoader.from("https://i.imgur.com/LFiCido.png");
                     
                     // Yakınlaştırma görselleri
                     this.zoom_5x = new Sprite(spritesheetImage, 156, 80, 87, 60, 170, 1.5, 128, 128);
