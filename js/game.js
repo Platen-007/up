@@ -1925,15 +1925,15 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
     
 
 if(theoKzObjects.ModeStremerheadshot){
-                          
-                }
-                
-                else{
-                 
-    var sound = document.createElement('audio');
-sound.src = 'https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3';
-sound.preload = 'auto';
-sound.play();
+            const _0x4ef863 = new Audio();
+            if (_0x1e3d5d % 0xa === 0x9) {
+              _0x4ef863.src = "https://wormateup.live/up/video/monster-kill-hahaha.mp3";
+            } else {
+              _0x4ef863.src = localStorage.getItem("selectedSound") || 'https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3';
+            }
+            if (localStorage.getItem("isMuted") !== "true") {
+              _0x4ef863.play()['catch'](function (_0x157a50) {
+                console.error("Error playing sound: ", _0x157a50);
     
     
     };
